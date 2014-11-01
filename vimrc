@@ -2,9 +2,10 @@
 " vim: set sw=2 ts=2 sts=2 et tw=78 foldmethod=marker
 " }}}
 
+" Basics {{{
 " We don't care about vi anymore.
 set nocompatible
-
+" }}}
 " Install plugins
 " We'll be using vim-plug for this
 
