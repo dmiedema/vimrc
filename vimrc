@@ -4,7 +4,7 @@
 
 " Basics {{{
 " We don't care about vi anymore.
-set nocompatible
+  set nocompatible
 " }}}
 " Install plugins
 " We'll be using vim-plug for this
@@ -12,6 +12,8 @@ set nocompatible
 " UI Stuff {{{
   filetype plugin indent on " Detect filetypes automagically
   syntax on " This shouldn't even be a damn option really
+  
+  set number
 
   scriptencoding utf-8 " This should be default really...
 
@@ -56,7 +58,8 @@ set nocompatible
 
   augroup resCur
     autocmd!
-    autocmd BufWinEnter * call ResCur() augroup END
+    autocmd BufWinEnter * call ResCur() 
+  augroup END
 " }}}
 
 " Editing {{{
@@ -68,8 +71,6 @@ set nocompatible
   set expandtab " Because tabs > spaces
 
   set shiftround
-
-  set showmatch
 
   " Autocommand groups {{{
     augroup filetype_vim
@@ -136,6 +137,9 @@ set nocompatible
     nnoremap <Leader>ev :vsplit $MYVIMRC<CR>
     " Source up my Vimrc
     nnoremap <Leader>sv :source $MYVIMRC<CR>
+
+    " Yank from the cursor to the end of the line, to be consistent with C and D.
+    nnoremap Y y$
   " }}}
 " }}}
 
