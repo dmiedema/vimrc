@@ -143,6 +143,31 @@
   " }}}
 " }}}
 
+" Bundle Installation {{{
+  call plug#begin()
+    Plug 'tpope/vim-sensible'
+    Plug 'tpope/vim-surround'
+    Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-rails'
+    Plug 'tpope/vim-commentary'
+    
+    Plug 'Shougo/neocomplete'
+    
+    Plug 'scrooloose/nerdtree'
+    Plug 'bling/vim-airline'
+    Plug 'bling/vim-bufferline'
+    
+    Plug 'mbbill/undotree'
+    Plug 'scrooloose/syntastic'
+    Plug 'majutsushi/tagbar'
+    
+    Plug 'Shougo/vimproc.vim'
+    Plug 'osyo-manga/vim-reunions'
+    Plug 'osyo-manga/vim-marching'
+    Plug 'ervandew/supertab'
+    call plug#end()
+" }}}
+
 " Bundle Configs {{{
   " NerdTree {{{
   " }}}
@@ -161,6 +186,9 @@
   " neocomplete {{{
   " }}}
   " vim-airline {{{
+    let g:airline_theme = 'solarized'
+    let g:airline_left_sep='›'  " Slightly fancier than '>'
+    let g:airline_right_sep='‹' " Slightly fancier than '<'
   " }}}
 " }}}
 
