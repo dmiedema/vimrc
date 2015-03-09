@@ -150,6 +150,7 @@
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-rails'
     Plug 'tpope/vim-commentary'
+    Plug 'tpope/vim-dispatch'
     
     Plug 'Shougo/neocomplete'
     
@@ -165,6 +166,15 @@
     Plug 'osyo-manga/vim-reunions'
     Plug 'osyo-manga/vim-marching'
     Plug 'ervandew/supertab'
+    
+    Plug 'vim-scripts/MRU'
+    Plug 'christoomey/vim-tmux-navigator'
+    Plug 'mhinz/vim-startify'
+    Plug 'wellle/tmux-complete'
+    Plug 'edkolev/tmuxline.vim'
+    
+    Plug 'b4winckler/vim-objc'
+    Plug 'toyamarinyon/vim-swift'
     call plug#end()
 " }}}
 
