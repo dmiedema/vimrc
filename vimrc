@@ -12,7 +12,7 @@
 " UI Stuff {{{
   filetype plugin indent on " Detect filetypes automagically
   syntax on " This shouldn't even be a damn option really
-  
+
   set number
 
   scriptencoding utf-8 " This should be default really...
@@ -58,7 +58,7 @@
 
   augroup resCur
     autocmd!
-    autocmd BufWinEnter * call ResCur() 
+    autocmd BufWinEnter * call ResCur()
   augroup END
 " }}}
 
@@ -151,28 +151,28 @@
     Plug 'tpope/vim-rails'
     Plug 'tpope/vim-commentary'
     Plug 'tpope/vim-dispatch'
-    
+
     Plug 'Shougo/neocomplete'
-    
+
     Plug 'scrooloose/nerdtree'
     Plug 'bling/vim-airline'
     Plug 'bling/vim-bufferline'
-    
+
     Plug 'mbbill/undotree'
     Plug 'scrooloose/syntastic'
     Plug 'majutsushi/tagbar'
-    
+
     Plug 'Shougo/vimproc.vim'
     Plug 'osyo-manga/vim-reunions'
     Plug 'osyo-manga/vim-marching'
     Plug 'ervandew/supertab'
-    
+
     Plug 'vim-scripts/MRU'
     Plug 'christoomey/vim-tmux-navigator'
     Plug 'mhinz/vim-startify'
     Plug 'wellle/tmux-complete.vim'
     Plug 'edkolev/tmuxline.vim'
-    
+
     Plug 'b4winckler/vim-objc'
     Plug 'toyamarinyon/vim-swift'
   call plug#end()
@@ -180,18 +180,18 @@
 
 " Bundle Configs {{{
   " NerdTree {{{
-  " }}}
-  " OmniComplete {{{
-  " }}}
-  " Ctags {{{
-  " }}}
-  " Tabularize {{{
+    map <C-e> <plug>NERDTreeTabsToggle<CR>
+    map <Leader>e :NERDTreeFind<CR>
+    nmap <Leader>nt :NERDTreeFind<CR>
+
+    let NerdTreeIgnore=['\.py[cd]$', '\~$', '\.swo$', '\.swp$', '^\.git', '^\.hg$']
+    let NerdTreeShowHidden=1
+    let NerdTreeKeepTreeInNewTab=1
   " }}}
   " Session List {{{
   " }}}
   " TagBar {{{
-  " }}}
-  " YouCompleteMe {{{
+    nnoremap <silent> <Leader>tt :TagBarToggle<CR>
   " }}}
   " neocomplete {{{
   " }}}
