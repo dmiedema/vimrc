@@ -175,7 +175,7 @@
     
     Plug 'b4winckler/vim-objc'
     Plug 'toyamarinyon/vim-swift'
-    call plug#end()
+  call plug#end()
 " }}}
 
 " Bundle Configs {{{
