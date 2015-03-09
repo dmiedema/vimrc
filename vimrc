@@ -170,7 +170,7 @@
     Plug 'vim-scripts/MRU'
     Plug 'christoomey/vim-tmux-navigator'
     Plug 'mhinz/vim-startify'
-    Plug 'wellle/tmux-complete'
+    Plug 'wellle/tmux-complete.vim'
     Plug 'edkolev/tmuxline.vim'
     
     Plug 'b4winckler/vim-objc'
