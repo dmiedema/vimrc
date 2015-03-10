@@ -1,26 +1,49 @@
-scrooloose/nerdtree
-tpope/vim-surround
-tpop/vim-repeat
-vim-scripts/sessionman.vim
-matchit.zip
-bling/vim-airline
-bling/vim-bufferline
+" Modeline & notes {{{
+" vim: set sw=2 ts=2 sts=2 et tw=78 foldmethod=marker
+"
+" Base list of included bundles.
+"
+" For adding custom bundles, add them to a `.vimrc.bundles.local` file
+" }}}
 
-mbbill/undotree
-mhinz/vim-signify
+call plug#begin()
+  " Included Bundles {{{
+    Plug 'tpope/vim-sensible'
+    Plug 'tpope/vim-surround'
+    Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-rails'
+    Plug 'tpope/vim-commentary'
+    Plug 'tpope/vim-dispatch'
 
-tpope/vim-abolish.git
+    Plug 'Shougo/neocomplete'
 
-scrooloose/syntastic
-tpope/vim-fugitive
+    Plug 'scrooloose/nerdtree'
+    Plug 'bling/vim-airline'
+    Plug 'bling/vim-bufferline'
 
-tpope/vim-commentary
-majutsushi/tagbar
+    Plug 'mbbill/undotree'
+    Plug 'scrooloose/syntastic'
+    Plug 'majutsushi/tagbar'
 
-Shougo/neocomplcache
-Shougo/neocomplete
-Shougo/vimproc
+    Plug 'Shougo/vimproc.vim'
+    Plug 'osyo-manga/vim-reunions'
+    Plug 'osyo-manga/vim-marching'
+    Plug 'ervandew/supertab'
 
-tpope/vim-rails
-tpope/vim-markdown
+    Plug 'vim-scripts/MRU'
+    Plug 'christoomey/vim-tmux-navigator'
+    Plug 'mhinz/vim-startify'
+    Plug 'wellle/tmux-complete.vim'
+    Plug 'edkolev/tmuxline.vim'
+
+    Plug 'b4winckler/vim-objc'
+    Plug 'toyamarinyon/vim-swift'
+    " }}}
+    "
+    " Use local plugins if there are any {{{
+    if filereadable(expand("~/.vimrc.bundles.local"))
+      source ~/.vimrc.bundles.local
+    endif
+    " }}}
+  call plug#end()
 

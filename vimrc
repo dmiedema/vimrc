@@ -1,5 +1,10 @@
 " Modeline & notes {{{
 " vim: set sw=2 ts=2 sts=2 et tw=78 foldmethod=marker
+"
+" Base vimrc config
+"
+" If you want to customize it at all, include your changes in a
+" `vimrc.local` file
 " }}}
 
 " Basics {{{
@@ -144,39 +149,10 @@
 " }}}
 
 " Bundle Installation {{{
-  call plug#begin()
-    Plug 'tpope/vim-sensible'
-    Plug 'tpope/vim-surround'
-    Plug 'tpope/vim-fugitive'
-    Plug 'tpope/vim-rails'
-    Plug 'tpope/vim-commentary'
-    Plug 'tpope/vim-dispatch'
-
-    Plug 'Shougo/neocomplete'
-
-    Plug 'scrooloose/nerdtree'
-    Plug 'bling/vim-airline'
-    Plug 'bling/vim-bufferline'
-
-    Plug 'mbbill/undotree'
-    Plug 'scrooloose/syntastic'
-    Plug 'majutsushi/tagbar'
-
-    Plug 'Shougo/vimproc.vim'
-    Plug 'osyo-manga/vim-reunions'
-    Plug 'osyo-manga/vim-marching'
-    Plug 'ervandew/supertab'
-
-    Plug 'vim-scripts/MRU'
-    Plug 'christoomey/vim-tmux-navigator'
-    Plug 'mhinz/vim-startify'
-    Plug 'wellle/tmux-complete.vim'
-    Plug 'edkolev/tmuxline.vim'
-
-    Plug 'b4winckler/vim-objc'
-    Plug 'toyamarinyon/vim-swift'
-  call plug#end()
-" }}}
+  if filereadable(expand("~/.vimrc.bundles"))
+    source ~/.vimrc.bundles
+  endif
+  " }}}
 
 " Bundle Configs {{{
   " NerdTree {{{
@@ -213,4 +189,11 @@
     let @/=_s
     call cursor(l, c)
   endfunction
+" }}}
+"
+
+" Local vimrc {{{
+  if filereadable(expand("~/.vimrc.local"))
+    source ~/.vimrc.local
+  endif
 " }}}
