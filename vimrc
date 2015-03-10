@@ -164,17 +164,19 @@
     let NerdTreeShowHidden=1
     let NerdTreeKeepTreeInNewTab=1
   " }}}
-  " Session List {{{
-  " }}}
   " TagBar {{{
     nnoremap <silent> <Leader>tt :TagBarToggle<CR>
   " }}}
   " neocomplete {{{
   " }}}
   " vim-airline {{{
-    let g:airline_theme = 'solarized'
+    let g:airline#extensions#tabline#enabled = 1
+    let g:airline_theme = 'tomorrow'
     let g:airline_left_sep='›'  " Slightly fancier than '>'
     let g:airline_right_sep='‹' " Slightly fancier than '<'
+  " }}}
+  " tmux-complete {{{
+    let g:tmuxcomplete#trigger = ''
   " }}}
 " }}}
 
