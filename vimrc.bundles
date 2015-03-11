@@ -41,6 +41,8 @@ call plug#begin('~/.vim/plugged')
 
     Plug 'flazz/vim-colorschemes'
     Plug 'airblade/vim-gitgutter'
+
+    Plug 'eraserhd/vim-ios'
     " }}}
     "
     " Use local plugins if there are any {{{
