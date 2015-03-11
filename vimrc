@@ -180,7 +180,7 @@
   colorscheme Tomorrow "set after plugins installed
   " NerdTree {{{
     map <C-e> <plug>NERDTreeTabsToggle<CR>
-    map <Leader>e :NERDTreeFind<CR>
+    map <Leader>e :NERDTreeToggle<CR>
     nmap <Leader>nt :NERDTreeFind<CR>
 
     let NerdTreeIgnore=['\.py[cd]$', '\~$', '\.swo$', '\.swp$', '^\.git', '^\.hg$']
