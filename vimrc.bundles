@@ -25,10 +25,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'scrooloose/syntastic'
     Plug 'majutsushi/tagbar'
 
-    Plug 'Shougo/vimproc.vim'
+    Plug 'Shougo/vimproc.vim', { 'do' : 'make -f make_mac.mak' }
     Plug 'osyo-manga/vim-reunions'
     Plug 'osyo-manga/vim-marching'
-    Plug 'ervandew/supertab'
 
     Plug 'vim-scripts/MRU'
     Plug 'christoomey/vim-tmux-navigator'
