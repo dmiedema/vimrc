@@ -273,7 +273,7 @@
 
       " For perlomni.vim setting.
       " https://github.com/c9s/perlomni.vim
-      let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::' 
+      let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
   " }}}
   " vim-airline {{{
     let g:airline#extensions#tabline#enabled = 1

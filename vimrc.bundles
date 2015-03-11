@@ -25,9 +25,9 @@ call plug#begin('~/.vim/plugged')
 
     Plug 'Shougo/vimproc.vim', { 'do' : 'make -f make_mac.mak' }
     " Plug 'osyo-manga/vim-reunions'
-    Plug 'Shougo/neocomplete' ", { 'for' : !['objc', 'c', 'cpp'] }
+    Plug 'Shougo/neocomplete'
     Plug 'Valloric/YouCompleteMe', { 'do' : './install.sh --clang-completer', 'for' : ['objc', 'c', 'cpp']}
-    Plug 'osyo-manga/vim-marching'
+    " Plug 'osyo-manga/vim-marching'
 
     Plug 'vim-scripts/MRU'
     Plug 'christoomey/vim-tmux-navigator'
