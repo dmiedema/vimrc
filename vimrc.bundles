@@ -43,9 +43,9 @@ call plug#begin('~/.vim/plugged')
     " }}}
     "
     " Use local plugins if there are any {{{
-    " if filereadable(expand("~/.vimrc.bundles.local"))
-    "   source ~/.vimrc.bundles.local
-    " endif
+    if filereadable(expand("~/.vimrc.bundles.local"))
+      source ~/.vimrc.bundles.local
+    endif
     " }}}
   call plug#end()
 
