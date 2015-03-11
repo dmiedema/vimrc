@@ -188,7 +188,7 @@
     let NerdTreeKeepTreeInNewTab=1
   " }}}
   " TagBar {{{
-    nnoremap <silent> <Leader>tt :TagBarToggle<CR>
+    nnoremap <silent> <Leader>tt :TagbarToggle<CR>
   " }}}
   " neocomplete {{{
       "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
