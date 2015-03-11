@@ -11,8 +11,6 @@
 " We don't care about vi anymore.
   set nocompatible
 " }}}
-" Install plugins
-" We'll be using vim-plug for this
 
 " UI Stuff {{{
   filetype plugin indent on " Detect filetypes automagically
@@ -152,9 +150,10 @@
   if filereadable(expand("~/.vimrc.bundles"))
     source ~/.vimrc.bundles
   endif
-  " }}}
+" }}}
 
 " Bundle Configs {{{
+  colorscheme Tomorrow "set after plugins installed
   " NerdTree {{{
     map <C-e> <plug>NERDTreeTabsToggle<CR>
     map <Leader>e :NERDTreeFind<CR>

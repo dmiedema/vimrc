@@ -6,7 +6,7 @@
 " For adding custom bundles, add them to a `.vimrc.bundles.local` file
 " }}}
 
-call plug#begin()
+call plug#begin('~/.vim/plugged')
   " Included Bundles {{{
     Plug 'tpope/vim-sensible'
     Plug 'tpope/vim-surround'
@@ -38,12 +38,14 @@ call plug#begin()
 
     Plug 'b4winckler/vim-objc'
     Plug 'toyamarinyon/vim-swift'
+
+    Plug 'flazz/vim-colorschemes'
     " }}}
     "
     " Use local plugins if there are any {{{
-    if filereadable(expand("~/.vimrc.bundles.local"))
-      source ~/.vimrc.bundles.local
-    endif
+    " if filereadable(expand("~/.vimrc.bundles.local"))
+    "   source ~/.vimrc.bundles.local
+    " endif
     " }}}
   call plug#end()
 
