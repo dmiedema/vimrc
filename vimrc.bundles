@@ -21,7 +21,7 @@ call plug#begin('~/.vim/plugged')
 
     Plug 'mbbill/undotree'
     Plug 'scrooloose/syntastic'
-    Plug 'shreerun/vim-polyglot'
+    Plug 'sheerun/vim-polyglot'
     Plug 'majutsushi/tagbar'
 
     Plug 'Shougo/vimproc.vim', { 'do' : 'make -f make_mac.mak' }
