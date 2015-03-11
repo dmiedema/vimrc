@@ -75,6 +75,9 @@
 
   set shiftround
 
+  noremap j gj
+  noremap k gk
+
   " Autocommand groups {{{
     augroup filetype_vim
       autocmd!
@@ -292,7 +295,15 @@
       let g:neocomplete#force_omni_input_patterns.cpp =
         \ '[^.[:digit:] *\t]\%(\.\|->\)\w*\|\h\w*::\w*'
     " }}}
+  " YouCompleteMe {{{
+      let g:ycm_confirm_extra_conf    = 0
+      let g:ycm_complete_in_comments  = 1
+      let g:ycm_extra_conf_vim_data   = ['&filetype']
+      let g:ycm_seed_identifiers_with_syntax = 1
+      let g:filetype_m = 'objc'
+
   " }}}
+" }}}
 
 " Functions {{{
   function! StripTrailingWhitespace()
