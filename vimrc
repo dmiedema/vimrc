@@ -70,6 +70,9 @@
   set shiftwidth=2
   set tabstop=2
   set softtabstop=2
+  set foldmethod=syntax
+  set foldlevelstart=20
+  set foldlevel=20
 
   set expandtab " Because tabs > spaces
 
