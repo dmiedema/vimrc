@@ -8,44 +8,59 @@
 
 call plug#begin('~/.vim/plugged')
   " Included Bundles {{{
-    Plug 'tpope/vim-sensible'
-    Plug 'tpope/vim-surround'
-    Plug 'tpope/vim-fugitive'
-    Plug 'tpope/vim-rails'
-    Plug 'tpope/vim-commentary'
-    Plug 'tpope/vim-dispatch'
-    Plug 'tpope/vim-abolish'
-    Plug 'tpope/vim-repeat'
-    Plug 'tpope/vim-afterimage'
-
-    Plug 'scrooloose/nerdtree'
-    Plug 'bling/vim-airline'
-    Plug 'bling/vim-bufferline'
-
-    Plug 'mbbill/undotree'
-    Plug 'scrooloose/syntastic'
-    Plug 'sheerun/vim-polyglot'
-    Plug 'majutsushi/tagbar'
-
-    Plug 'Shougo/vimproc.vim', { 'do' : 'make -f make_mac.mak' }
-    " Plug 'osyo-manga/vim-reunions'
-    Plug 'Shougo/neocomplete'
-    Plug 'Valloric/YouCompleteMe', { 'do' : './install.sh --clang-completer', 'for' : ['objc', 'c', 'cpp']}
-    " Plug 'osyo-manga/vim-marching'
+    " I swear, nearly every plugin begins with 'vim'
+    Plug 'kien/ctrlp.vim'
 
     Plug 'vim-scripts/MRU'
-    Plug 'christoomey/vim-tmux-navigator'
-    Plug 'mhinz/vim-startify'
+
+    Plug 'Shougo/neocomplete'
+    Plug 'scrooloose/nerdtree'
+
+    Plug 'scrooloose/syntastic'
+    Plug 'majutsushi/tagbar'
+
+    Plug 'mbbill/undotree'
+
     Plug 'wellle/tmux-complete.vim'
     Plug 'edkolev/tmuxline.vim'
 
-    Plug 'b4winckler/vim-objc'
-    Plug 'toyamarinyon/vim-swift'
+    Plug 'tpope/vim-abolish'
+    Plug 'tpope/vim-afterimage'
+    Plug 'bling/vim-airline'
+
+    Plug 'bling/vim-bufferline'
 
     Plug 'flazz/vim-colorschemes'
+    Plug 'tpope/vim-commentary'
+
+    Plug 'tpope/vim-dispatch'
+
+    Plug 'Lokaltog/vim-easymotion'
+
+    Plug 'tpope/vim-fugitive'
+
     Plug 'airblade/vim-gitgutter'
 
     Plug 'eraserhd/vim-ios'
+
+    Plug 'b4winckler/vim-objc'
+
+    Plug 'sheerun/vim-polyglot'
+    Plug 'Shougo/vimproc.vim', { 'do' : 'make -f make_mac.mak' }
+
+    Plug 'tpope/vim-rails'
+    Plug 'tpope/vim-repeat'
+
+    Plug 'tpope/vim-sensible'
+    Plug 'mhinz/vim-startify'
+    Plug 'tpope/vim-surround'
+    Plug 'toyamarinyon/vim-swift'
+
+    Plug 'tpope/vim-tbone'
+
+    Plug 'christoomey/vim-tmux-navigator'
+
+    Plug 'Valloric/YouCompleteMe', { 'do' : './install.sh --clang-completer', 'for' : ['objc', 'c', 'cpp']}
     " }}}
     "
     " Use local plugins if there are any {{{

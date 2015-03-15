@@ -89,7 +89,8 @@
   " }}}
 
   " whitespace blows
-  autocmd FileType c,cpp,java,go,php,javascripts,objc,python,ruby,perl,yml autocmd BufWritePre <buffer> call StripTrailingWhitespace()
+  autocmd BufWritePre * :%s/\s\+$//e
+  " autocmd FileType c,cpp,java,go,php,javascripts,objc,python,ruby,perl,yml autocmd BufWritePre <buffer> call StripTrailingWhitespace()
 " }}}
 
 " Undo File & Backups {{{
@@ -181,6 +182,10 @@
 
 " Bundle Configs {{{
   colorscheme Tomorrow "set after plugins installed
+  " ctrlp {{{
+    let g:ctrlp_map = '<c-p>'
+    let g:ctrlp_cmd = 'CtrlP'
+  " }}}
   " NerdTree {{{
     map <C-e> <plug>NERDTreeTabsToggle<CR>
     map <Leader>e :NERDTreeToggle<CR>
