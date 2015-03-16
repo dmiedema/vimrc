@@ -23,6 +23,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'scrooloose/syntastic'
     Plug 'sheerun/vim-polyglot'
     Plug 'majutsushi/tagbar'
+    Plug 'junegunn/vim-easy-align'
 
     Plug 'Shougo/vimproc.vim', { 'do' : 'make -f make_mac.mak' }
     " Plug 'osyo-manga/vim-reunions'
