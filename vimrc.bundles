@@ -30,6 +30,7 @@ call plug#begin('~/.vim/plugged')
 
     Plug 'bling/vim-bufferline'
 
+    Plug 'rhysd/vim-clang-format'
     Plug 'flazz/vim-colorschemes'
     Plug 'tpope/vim-commentary'
 
@@ -45,6 +46,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'eraserhd/vim-ios'
 
     Plug 'b4winckler/vim-objc'
+    Plug 'kana/vim-operator-user'
 
     Plug 'sheerun/vim-polyglot'
     Plug 'Shougo/vimproc.vim', { 'do' : 'make -f make_mac.mak' }
