@@ -38,6 +38,7 @@ call plug#begin('~/.vim/plugged')
 
     Plug 'junegunn/vim-easy-align'
     Plug 'Lokaltog/vim-easymotion'
+    Plug 'junegunn/vim-emoji'
 
     Plug 'tpope/vim-fugitive'
 

@@ -316,6 +316,9 @@
 
     nmap ga <Plug>(EasyAlign)
   " }}}
+  " clang-format {{{
+    let g:clang_format#code_style = 'llvm'
+  " }}}
 " }}}
 
 " Functions {{{
