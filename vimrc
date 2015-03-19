@@ -181,7 +181,7 @@
 " }}}
 
 " Bundle Configs {{{
-  colorscheme Tomorrow "set after plugins installed
+  colorscheme flatlandia "set after plugins installed
   " ctrlp {{{
     let g:ctrlp_map = '<c-p>'
     let g:ctrlp_cmd = 'CtrlP'
@@ -285,7 +285,7 @@
   " }}}
   " vim-airline {{{
     let g:airline#extensions#tabline#enabled = 1
-    let g:airline_theme = 'tomorrow'
+    let g:airline_theme = 'murmur'
     let g:airline_left_sep='›'  " Slightly fancier than '>'
     let g:airline_right_sep='‹' " Slightly fancier than '<'
   " }}}

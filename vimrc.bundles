@@ -22,7 +22,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'mbbill/undotree'
 
     Plug 'wellle/tmux-complete.vim'
-"    Plug 'edkolev/tmuxline.vim'
+    Plug 'edkolev/tmuxline.vim'
 
     Plug 'tpope/vim-abolish'
     Plug 'tpope/vim-afterimage'
