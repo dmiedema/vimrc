@@ -288,6 +288,8 @@
     let g:airline_theme = 'murmur'
     let g:airline_left_sep='›'  " Slightly fancier than '>'
     let g:airline_right_sep='‹' " Slightly fancier than '<'
+
+    let g:airline#extensions#tmuxline#enabled = 0 " disable tmuxline so it doesn't overwrite settings
   " }}}
   " tmux-complete {{{
     let g:tmuxcomplete#trigger = ''
