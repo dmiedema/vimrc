@@ -1,0 +1,13 @@
+i jj <ESC>
+i kk <ESC>
+
+set incsearch
+
+set smartcase
+
+set gdefault
+
+set pasteboard
+
+" Map <space>b to toggle a breakpoint at the current line
+nmap <space>b :xccmd toggleBreakpointAtCurrentLine<CR>
