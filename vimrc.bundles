@@ -44,6 +44,7 @@ call plug#begin('~/.vim/plugged')
 
     Plug 'airblade/vim-gitgutter'
 
+    Plug 'nathanaelkane/vim-indent-guides'
     Plug 'eraserhd/vim-ios'
 
     Plug 'b4winckler/vim-objc'
