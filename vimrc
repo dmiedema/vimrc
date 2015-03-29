@@ -14,6 +14,7 @@
 
 " UI Stuff {{{
   filetype plugin indent on " Detect filetypes automagically
+  set ttyfast
   syntax on " This shouldn't even be a damn option really
 
   set number
