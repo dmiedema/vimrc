@@ -16,13 +16,16 @@ call plug#begin('~/.vim/plugged')
     Plug 'Shougo/neocomplete'
     Plug 'scrooloose/nerdtree'
 
+    Plug 'chrisbra/Recover.vim'
+    Plug 'danro/rename.vim'
+
     Plug 'scrooloose/syntastic'
+
     Plug 'majutsushi/tagbar'
-
-    Plug 'mbbill/undotree'
-
     Plug 'wellle/tmux-complete.vim'
     Plug 'edkolev/tmuxline.vim'
+
+    Plug 'mbbill/undotree'
 
     Plug 'tpope/vim-abolish'
     Plug 'tpope/vim-afterimage'
@@ -65,7 +68,7 @@ call plug#begin('~/.vim/plugged')
 
     Plug 'christoomey/vim-tmux-navigator'
 
-    Plug 'Valloric/YouCompleteMe', { 'do' : './install.sh --clang-completer', 'for' : ['objc', 'c', 'cpp']}
+    Plug 'Valloric/YouCompleteMe', { 'do' : './install.sh --clang-completer', 'for' : ['objc', 'c', 'cpp', 'swift']}
     " }}}
     "
     " Use local plugins if there are any {{{
