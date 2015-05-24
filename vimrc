@@ -89,6 +89,11 @@
     augroup END
   " }}}
 
+  " File Type Indenting {{{
+    autocmd FileType objc setlocal expandtab shiftwidth=4 softtabstop=4
+    autocmd FileType swift setlocal expandtab shiftwidth=4 softtabstop=4
+  " }}}
+
   " whitespace blows
   " autocmd BufWritePre * :%s/\s\+$//e
   " autocmd FileType c,cpp,java,go,php,javascripts,objc,python,ruby,perl,yml autocmd BufWritePre <buffer> call StripTrailingWhitespace()
