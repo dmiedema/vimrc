@@ -96,7 +96,7 @@
 
   " whitespace blows
   " autocmd BufWritePre * :%s/\s\+$//e
-  " autocmd FileType c,cpp,java,go,php,javascripts,objc,python,ruby,perl,yml autocmd BufWritePre <buffer> call StripTrailingWhitespace()
+  autocmd FileType java,go,php,javascript,python,ruby,perl,yml autocmd BufWritePre <buffer> call StripTrailingWhitespace()
 " }}}
 
 " Undo File & Backups {{{
@@ -192,6 +192,11 @@
   " ctrlp {{{
     let g:ctrlp_map = '<c-p>'
     let g:ctrlp_cmd = 'CtrlP'
+  " }}}
+  " incsearch {{{
+    map /  <Plug>(incsearch-forward)
+    map ?  <Plug>(incsearch-backward)
+    map g/ <Plug>(incsearch-stay)
   " }}}
   " NerdTree {{{
     map <C-e> <plug>NERDTreeTabsToggle<CR>
