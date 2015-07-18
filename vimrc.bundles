@@ -11,6 +11,9 @@ call plug#begin('~/.vim/plugged')
     " I swear, nearly every plugin begins with 'vim'
     Plug 'kien/ctrlp.vim'
 
+    Plug 'haya14busa/incsearch.vim'
+    Plug 'Shougo/junkfile.vim'
+
     Plug 'vim-scripts/MRU'
 
     Plug 'Shougo/neocomplete'
@@ -46,6 +49,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-fugitive'
 
     Plug 'airblade/vim-gitgutter'
+
+    Plug 'tpope/vim-markdown'
 
     Plug 'nathanaelkane/vim-indent-guides'
     Plug 'eraserhd/vim-ios'
