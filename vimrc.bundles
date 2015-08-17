@@ -34,6 +34,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-afterimage'
     Plug 'bling/vim-airline'
 
+    Plug 'jeetsukumaran/vim-buffergator'
     Plug 'bling/vim-bufferline'
 
     Plug 'rhysd/vim-clang-format'
