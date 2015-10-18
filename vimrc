@@ -189,6 +189,20 @@
 " Bundle Configs {{{
   colorscheme flatlandia "set after plugins installed
 
+  " CamelCaseMotion {{{
+    map <silent> w <Plug>CamelCaseMotion_w
+    map <silent> b <Plug>CamelCaseMotion_b
+    map <silent> e <Plug>CamelCaseMotion_e
+    sunmap w
+    sunmap b
+    sunmap e
+    omap <silent> iw <Plug>CamelCaseMotion_iw
+    xmap <silent> iw <Plug>CamelCaseMotion_iw
+    omap <silent> ib <Plug>CamelCaseMotion_ib
+    xmap <silent> ib <Plug>CamelCaseMotion_ib
+    omap <silent> ie <Plug>CamelCaseMotion_ie
+    xmap <silent> ie <Plug>CamelCaseMotion_ie
+  " }}}
   " ctrlp {{{
     let g:ctrlp_map = '<c-p>'
     let g:ctrlp_cmd = 'CtrlP'
@@ -322,7 +336,7 @@
     let g:ycm_complete_in_comments  = 1
     let g:ycm_extra_conf_vim_data   = ['&filetype']
     let g:ycm_seed_identifiers_with_syntax = 1
-    let g:filetype_m = 'objc'
+    " let g:filetype_m = 'objc'
 
   " }}}
   " vim-easy-align {{{
