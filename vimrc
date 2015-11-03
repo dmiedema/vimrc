@@ -209,11 +209,6 @@
       " Additional settings
       setlocal spell
 
-      " If no commit message, start with insert mode
-      if a:info.vcs ==# 'git' && getline(1) ==# ''
-          startinsert
-      end
-
       " Scroll the diff window from insert mode
       " Map <C-n> and <C-p>
       imap <buffer><C-n> <Plug>(committia-scroll-diff-down-half)
