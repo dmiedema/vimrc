@@ -9,8 +9,12 @@
 call plug#begin('~/.vim/plugged')
   " Included Bundles {{{
     " I swear, nearly every plugin begins with 'vim'
+    Plug 'vim-scripts/a.vim'
+    
+    Plug 'vim-scripts/c.vim'
     Plug 'bkad/CamelCaseMotion'
     Plug 'rhysd/committia.vim'
+
     Plug 'kien/ctrlp.vim'
 
     Plug 'haya14busa/incsearch.vim'

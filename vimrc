@@ -360,9 +360,10 @@
     let g:clang_format#code_style = 'llvm'
   " }}}
   " indent guides {{{
-    let g:indent_guides_auto_colors = 0
+    let g:indent_guides_auto_colors = 1
     hi IndentGuidesOdd  guibg=red   ctermbg=3
     hi IndentGuidesEven guibg=green ctermbg=4
+    let g:indent_guides_guide_size = 1
   " }}}
 " }}}
 
