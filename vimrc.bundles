@@ -17,6 +17,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'Shougo/junkfile.vim'
 
     Plug 'vim-scripts/MRU'
+    Plug 'jaxbot/semantic-highlight.vim'
 
     Plug 'Shougo/neocomplete'
     Plug 'scrooloose/nerdtree'
@@ -78,7 +79,7 @@ call plug#begin('~/.vim/plugged')
 
     Plug 'christoomey/vim-tmux-navigator'
 
-    " Plug 'Valloric/YouCompleteMe', { 'do' : './install.sh --clang-completer', 'for' : ['objc', 'c', 'cpp', 'swift']}
+    Plug 'Valloric/YouCompleteMe', { 'do' : './install.sh --clang-completer', 'for' : ['objc', 'c', 'cpp', 'swift']}
     " }}}
     "
     " Use local plugins if there are any {{{
