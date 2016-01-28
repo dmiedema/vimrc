@@ -83,7 +83,7 @@ call plug#begin('~/.vim/plugged')
 
     Plug 'christoomey/vim-tmux-navigator'
 
-    Plug 'Valloric/YouCompleteMe', { 'do' : './install.sh --clang-completer', 'for' : ['objc', 'c', 'cpp', 'swift']}
+    " Plug 'Valloric/YouCompleteMe', { 'do' : './install.sh --clang-completer', 'for' : ['objc', 'c', 'cpp', 'swift']}
     " }}}
     "
     " Use local plugins if there are any {{{
