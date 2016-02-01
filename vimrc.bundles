@@ -39,7 +39,7 @@ call plug#begin('~/.vim/plugged')
 
     Plug 'tpope/vim-abolish'
     Plug 'tpope/vim-afterimage'
-    Plug 'bling/vim-airline'
+    Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
 
     Plug 'jeetsukumaran/vim-buffergator'
