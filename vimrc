@@ -190,7 +190,7 @@
 " }}}
 
 " Bundle Configs {{{
-  colorscheme flatlandia "set after plugins installed
+  colorscheme wombat256 "set after plugins installed
 
   " CamelCaseMotion {{{
     map <silent> w <Plug>CamelCaseMotion_w

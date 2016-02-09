@@ -13,6 +13,7 @@ call plug#begin('~/.vim/plugged')
     
     Plug 'vim-scripts/c.vim'
     Plug 'bkad/CamelCaseMotion'
+    Plug 'jeaye/color_coded', { 'do' : 'cmake . && make && make install', 'for' : ['objc', 'c', 'cpp']}
     Plug 'rhysd/committia.vim'
 
     Plug 'kien/ctrlp.vim'
