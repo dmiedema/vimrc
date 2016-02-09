@@ -64,7 +64,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-markdown'
 
     Plug 'nathanaelkane/vim-indent-guides'
-    Plug 'eraserhd/vim-ios', { 'for' : [objc] }
+    Plug 'eraserhd/vim-ios', { 'for' : ['objc'] }
 
     Plug 'b4winckler/vim-objc'
     Plug 'kana/vim-operator-user'
