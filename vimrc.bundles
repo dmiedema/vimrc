@@ -46,6 +46,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'jeetsukumaran/vim-buffergator'
     Plug 'bling/vim-bufferline'
 
+    Plug 'cfdrake/vim-carthage'
     Plug 'rhysd/vim-clang-format'
     Plug 'flazz/vim-colorschemes'
     Plug 'tpope/vim-commentary'
@@ -54,6 +55,7 @@ call plug#begin('~/.vim/plugged')
 
     Plug 'junegunn/vim-easy-align'
     Plug 'Lokaltog/vim-easymotion'
+    Plug 'xolox/vim-easytags' " requires xolox/vim-misc
     Plug 'junegunn/vim-emoji'
 
     Plug 'tpope/vim-fugitive'
@@ -62,6 +64,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'fatih/vim-go'
 
     Plug 'tpope/vim-markdown'
+    Plug 'xolox/vim-misc'
 
     Plug 'nathanaelkane/vim-indent-guides'
     Plug 'eraserhd/vim-ios', { 'for' : ['objc'] }

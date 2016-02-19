@@ -159,10 +159,13 @@
     " remape ; to : in normal mode because i suck at shift
     nnoremap ; :
     " Better split navigation
-    nnoremap <C-h> <C-w>h
-    nnoremap <C-j> <C-w>j
-    nnoremap <C-k> <C-w>k
-    nnoremap <C-l> <C-w>l
+    nnoremap <C-j> <C-W>j
+    nnoremap <C-k> <C-W>k
+    nnoremap <C-h> <C-W>h
+    nnoremap <C-l> <C-W>l
+
+    " Easier expanding of windows
+    nnoremap <C-_> <C-W>_
 
     " space to toggle folds.
     nnoremap <space> za
