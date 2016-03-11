@@ -13,10 +13,12 @@ call plug#begin('~/.vim/plugged')
     
     Plug 'vim-scripts/c.vim'
     Plug 'bkad/CamelCaseMotion'
-    Plug 'jeaye/color_coded', { 'do' : 'cmake . && make && make install', 'for' : ['objc', 'c', 'cpp']}
+    Plug 'jeaye/color_coded', { 'do' : 'cmake . && make && make install' }
     Plug 'rhysd/committia.vim'
 
     Plug 'kien/ctrlp.vim'
+
+    Plug 'Konfekt/FastFold'
 
     Plug 'haya14busa/incsearch.vim'
     Plug 'Shougo/junkfile.vim'
