@@ -184,6 +184,10 @@
     " Reset highlighted search
     nnoremap <CR> :let @/=""<CR><CR>
   " }}}
+
+  " Command Mode {{{
+    command! -nargs=* -bang -complete=file W w<bang> <args>
+  " }}}
 " }}}
 
 " Bundle Installation {{{
@@ -453,10 +457,10 @@
     call cursor(l, c)
   endfunction
 " }}}
-"
 
 " Local vimrc {{{
   if filereadable(expand("~/.vimrc.local"))
     source ~/.vimrc.local
   endif
 " }}}
+
