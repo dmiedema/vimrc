@@ -150,11 +150,11 @@
   " }}}
 
   " Normal Mode {{{
-    " Arrow keys are for bitches. Stop using them >:[
-    nnoremap <up> <nop>
-    nnoremap <down> <nop>
-    nnoremap <left> <nop>
-    nnoremap <right> <nop>
+    " Arrow keys are for ~~bitches~~ resizing.
+    nnoremap <UP> :resize -2 <CR>
+    nnoremap <DOWN> :resize +2 <CR>
+    nnoremap <LEFT> :vertical resize +2 <CR>
+    nnoremap <RIGHT> :vertical resize -2 <CR>
 
     " remape ; to : in normal mode because i suck at shift
     nnoremap ; :
