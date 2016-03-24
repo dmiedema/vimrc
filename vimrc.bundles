@@ -10,13 +10,13 @@ call plug#begin('~/.vim/plugged')
   " Included Bundles {{{
     " I swear, nearly every plugin begins with 'vim'
     Plug 'vim-scripts/a.vim'
-    
+
     Plug 'vim-scripts/c.vim'
     Plug 'bkad/CamelCaseMotion'
     Plug 'jeaye/color_coded', { 'do' : 'cmake . && make && make install' }
     Plug 'rhysd/committia.vim'
 
-    Plug 'kien/ctrlp.vim'
+    Plug 'ctrlpvim/ctrlp.vim'
 
     Plug 'Konfekt/FastFold'
 
