@@ -94,6 +94,11 @@
     autocmd FileType swift setlocal expandtab shiftwidth=4 softtabstop=4
   " }}}
 
+  " Cursor line only in active window {{{
+    autocmd WinEnter * setlocal cursorline
+    autocmd WinLeave * setlocal nocursorline
+  " }}}
+
   " whitespace blows
   " autocmd BufWritePre * :%s/\s\+$//e
   autocmd FileType java,go,php,javascript,objc,python,ruby,perl,swift,yml autocmd BufWritePre <buffer> call StripTrailingWhitespace()

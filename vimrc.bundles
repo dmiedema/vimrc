@@ -60,6 +60,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'Lokaltog/vim-easymotion'
     Plug 'xolox/vim-easytags' " requires xolox/vim-misc
     Plug 'junegunn/vim-emoji'
+    Plug 'tpope/vim-eunuch'
 
     Plug 'tpope/vim-fugitive'
 
