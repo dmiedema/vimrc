@@ -91,7 +91,6 @@
 
   " File Type Indenting {{{
     autocmd FileType objc setlocal expandtab shiftwidth=4 softtabstop=4
-    autocmd FileType swift setlocal expandtab shiftwidth=4 softtabstop=4
   " }}}
 
   " Cursor line only in active window {{{
@@ -336,10 +335,10 @@
 
     " Define dictionary.
     " let g:neocomplete#sources#dictionary#dictionaries = {
-      \ 'default' : '',
-      \ 'vimshell' : $HOME.'/.vimshell_hist',
-      \ 'scheme' : $HOME.'/.gosh_completions'
-          \ }
+      " \ 'default' : '',
+      " \ 'vimshell' : $HOME.'/.vimshell_hist',
+      " \ 'scheme' : $HOME.'/.gosh_completions'
+      "     \ }
 
     " Define keyword.
     " if !exists('g:neocomplete#keyword_patterns')

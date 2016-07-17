@@ -10,6 +10,7 @@ call plug#begin('~/.vim/plugged')
   " Included Bundles {{{
     " I swear, nearly every plugin begins with 'vim'
     Plug 'vim-scripts/a.vim'
+    Plug 'mitsuse/autocomplete-swift'
 
     Plug 'vim-scripts/c.vim'
     Plug 'bkad/CamelCaseMotion'
@@ -19,6 +20,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'ctrlpvim/ctrlp.vim'
 
     Plug 'Konfekt/FastFold'
+    Plug 'junegunn/fzf', { 'dir' : '~/.fzf', 'do' : './install --all' }
 
     Plug 'haya14busa/incsearch.vim'
     Plug 'Shougo/junkfile.vim'
