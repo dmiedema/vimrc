@@ -101,6 +101,12 @@
   " whitespace blows
   " autocmd BufWritePre * :%s/\s\+$//e
   autocmd FileType java,go,php,javascript,objc,python,ruby,perl,swift,yml autocmd BufWritePre <buffer> call StripTrailingWhitespace()
+
+  " Treat `.ipa`s as `.zip` files
+  autocmd BufReadCmd *.ipa call zip#Browse(expand("<amatch>"))
+
+  " Save files on focus lost events, like switching spits
+  autocmd BufLeave,FocusLost * silent! wall
 " }}}
 
 " Undo File & Backups {{{
