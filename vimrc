@@ -98,16 +98,19 @@
     autocmd WinLeave * setlocal nocursorline
   " }}}
 
+  " FileType specific options {{{
   " whitespace blows
   " autocmd BufWritePre * :%s/\s\+$//e
   autocmd FileType java,go,php,javascript,objc,python,ruby,perl,swift,yml autocmd BufWritePre <buffer> call StripTrailingWhitespace()
+  autocmd FileType yaml,yml autocmd BufWinEnter <buffer> IndentGuidesToggle
+  " }}}
 
   " Treat `.ipa`s as `.zip` files
   autocmd BufReadCmd *.ipa call zip#Browse(expand("<amatch>"))
 
   " Save files on focus lost events, like switching spits
   autocmd BufLeave,FocusLost * silent! wall
-" }}}
+
 
 " Undo File & Backups {{{
   set backup
@@ -452,12 +455,18 @@
   " }}}
   " indent guides {{{
     let g:indent_guides_auto_colors = 0
-    hi IndentGuidesOdd  guibg=red   ctermbg=lightgrey
+    hi IndentGuidesOdd  guibg=red   ctermbg=black
     hi IndentGuidesEven guibg=green ctermbg=darkgrey
-    let g:indent_guides_guide_size = 1
+    " let g:indent_guides_guide_size = 1
   " }}}
   " undotree {{{
     nnoremap <silent> <Space>u :UndotreeToggle<CR>
+  " }}}
+  " syntastic {{{
+    let g:syntastic_always_populate_loc_list = 1
+    let g:syntastic_auto_loc_list = 1
+    let g:syntastic_check_on_open = 1
+    let g:syntastic_check_on_wq = 0
   " }}}
 " }}}
 
