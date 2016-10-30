@@ -35,6 +35,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'chrisbra/Recover.vim'
     Plug 'danro/rename.vim'
 
+    Plug 'aciidb0mb3r/SwiftDoc.vim'
+    Plug 'aciidb0mb3r/SwiftMarkupGen', { 'do' : 'make build install' }
     Plug 'scrooloose/syntastic'
 
     Plug 'majutsushi/tagbar'
@@ -49,7 +51,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
 
-    Plug 'ConradIrwin/vim-bracketed-paste'
     Plug 'jeetsukumaran/vim-buffergator'
     Plug 'bling/vim-bufferline'
 
@@ -98,7 +99,7 @@ call plug#begin('~/.vim/plugged')
 
     Plug 'wellle/visual-split.vim'
     Plug 'keith/xcconfig.vim'
-    " Plug 'Valloric/YouCompleteMe', { 'do' : './install.sh --clang-completer', 'for' : ['objc', 'c', 'cpp', 'swift']}
+    Plug 'Valloric/YouCompleteMe', { 'do' : './install.py --clang-completer --gocode-completer --tern-completer', 'for' : ['objc', 'c', 'cpp', 'swift']}
     " }}}
     "
     " Use local plugins if there are any {{{
