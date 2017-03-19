@@ -34,6 +34,8 @@
   set splitright
   set splitbelow
 
+  set lazyredraw " redraw only when we need to
+
   set backspace=indent,eol,start
   set linespace=0
   set showmatch
@@ -47,6 +49,15 @@
   set whichwrap=b,s,h,l,<,>,[,]
   set foldenable
   set list
+
+  " allow cursor change in tmux mode
+  if exists('$TMUX')
+    let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+    let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+  else
+    let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+    let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+  endif
 
   " Git stuff
   au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
@@ -82,6 +93,8 @@
   noremap j gj
   noremap k gk
 
+  nnoremap gV `[v`] " highlight last inserted text
+
   " Autocommand groups {{{
     augroup filetype_vim
       autocmd!
@@ -101,7 +114,7 @@
   " FileType specific options {{{
   " whitespace blows
   " autocmd BufWritePre * :%s/\s\+$//e
-  autocmd FileType java,go,php,javascript,objc,python,ruby,perl,swift,yml autocmd BufWritePre <buffer> call StripTrailingWhitespace()
+  autocmd FileType java,php,javascript,objc,python,ruby,perl,swift,yml autocmd BufWritePre <buffer> call StripTrailingWhitespace()
   autocmd FileType yaml,yml autocmd BufWinEnter <buffer> IndentGuidesToggle
   " }}}
 
@@ -154,6 +167,7 @@
     " You're welcome for these
     inoremap jj <ESC>
     inoremap kk <ESC>
+    inoremap kj <ESC>
 
     " toggle case of word
     inoremap <c-`> <ESC>viw~<ESC>i
@@ -190,6 +204,9 @@
     nnoremap <Leader>ev :vsplit $MYVIMRC<CR>
     " Source up my Vimrc
     nnoremap <Leader>sv :source $MYVIMRC<CR>
+
+    " toggle gundo
+    nnoremap <leader>u :GundoToggle<CR>
 
     " Yank from the cursor to the end of the line, to be consistent with C and D.
     nnoremap Y y$

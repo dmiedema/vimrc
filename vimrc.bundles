@@ -23,6 +23,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'Konfekt/FastFold'
     Plug 'junegunn/fzf', { 'dir' : '~/.fzf', 'do' : './install --all' }
 
+    Plug 'sjl/gundo.vim'
+
     Plug 'haya14busa/incsearch.vim'
     Plug 'Shougo/junkfile.vim'
 
