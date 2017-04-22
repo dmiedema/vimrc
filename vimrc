@@ -307,7 +307,7 @@
         " <ESC> takes you out of insert mode
         inoremap <expr> <Esc>   pumvisible() ? "\<C-y>\<Esc>" : "\<Esc>"
         " <CR> accepts first, then sends the <CR>
-        inoremap <expr> <CR>    pumvisible() ? "\<C-y>\<CR>" : "\<CR>"
+        " inoremap <expr> <CR>    pumvisible() ? "\<C-y>\<CR>" : "\<CR>"
         " <Down> and <Up> cycle like <Tab> and <S-Tab>
         inoremap <expr> <Down>  pumvisible() ? "\<C-n>" : "\<Down>"
         inoremap <expr> <Up>    pumvisible() ? "\<C-p>" : "\<Up>"
