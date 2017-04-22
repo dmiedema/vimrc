@@ -86,7 +86,8 @@
   set foldlevelstart=20
   set foldlevel=20
 
-  set expandtab " Because tabs > spaces
+  set smarttab " Lets be smart about tabs
+  set expandtab " Because tabs < spaces
 
   set shiftround
 
@@ -177,7 +178,7 @@
   " }}}
 
   " Normal Mode {{{
-    " Arrow keys are for ~~bitches~~ resizing.
+    " Arrow keys are for  resizing.
     nnoremap <UP> :resize -2 <CR>
     nnoremap <DOWN> :resize +2 <CR>
     nnoremap <LEFT> :vertical resize +2 <CR>
@@ -485,6 +486,12 @@
     let g:syntastic_check_on_open = 1
     let g:syntastic_check_on_wq = 0
     let g:syntastic_swift_checkers = ['swiftpm', 'swiftlint']
+  " }}}
+  " Fzf {{{
+    let g:fzf_action = {
+      \ 'ctrl-t': 'tab split',
+      \ 'ctrl-x': 'split',
+      \ 'ctrl-v': 'vsplit' }
   " }}}
 " }}}
 
