@@ -53,6 +53,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-afterimage'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
+    " Plug 'Chiel92/vim-autoformat'
 
     Plug 'jeetsukumaran/vim-buffergator'
     Plug 'bling/vim-bufferline'
@@ -102,6 +103,7 @@ call plug#begin('~/.vim/plugged')
 
     Plug 'wellle/visual-split.vim'
     Plug 'keith/xcconfig.vim'
+    Plug 'sindresorhus/vim-xo'
     Plug 'Valloric/YouCompleteMe', { 'do' : './install.py --clang-completer --gocode-completer --tern-completer', 'for' : ['objc', 'c', 'cpp', 'swift']}
     " }}}
     "

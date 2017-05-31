@@ -115,6 +115,8 @@
   " FileType specific options {{{
   " whitespace blows
   " autocmd BufWritePre * :%s/\s\+$//e
+  " Rely on Autoformat to handle formatting on save
+  " autocmd BufWrite * :Autoformat
   autocmd FileType java,php,javascript,objc,python,ruby,perl,swift,yml autocmd BufWritePre <buffer> call StripTrailingWhitespace()
   autocmd FileType yaml,yml autocmd BufWinEnter <buffer> IndentGuidesToggle
   " }}}
@@ -261,7 +263,7 @@
   " }}}
   " ctrlp {{{
     let g:ctrlp_map = '<c-p>'
-    let g:ctrlp_cmd = 'CtrlP'
+    let g:ctrlp_cmd = 'FZF'
   " }}}
   " incsearch {{{
     map /  <Plug>(incsearch-forward)
@@ -486,6 +488,7 @@
     let g:syntastic_check_on_open = 1
     let g:syntastic_check_on_wq = 0
     let g:syntastic_swift_checkers = ['swiftpm', 'swiftlint']
+    " let g:syntastic_javascript_checkers = ['xo']
   " }}}
   " Fzf {{{
     let g:fzf_action = {
