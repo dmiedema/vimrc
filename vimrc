@@ -482,7 +482,16 @@
   " undotree {{{
     nnoremap <silent> <Space>u :UndotreeToggle<CR>
   " }}}
+  " ale {{{
+    let g:airline#extensions#ale#enabled = 1
+    let g:ale_completion_enabled = 1
+    let g:ale_open_list = 1
+  " }}}
   " syntastic {{{
+    set statusline+=%#warningmsg#
+    set statusline+=%{SyntasticStatuslineFlag()}
+    set statusline+=%*
+
     let g:syntastic_always_populate_loc_list = 1
     let g:syntastic_auto_loc_list = 1
     let g:syntastic_check_on_open = 1
@@ -516,4 +525,7 @@
     source ~/.vimrc.local
   endif
 " }}}
+
+packloadall
+silent! helptags ALL
 
