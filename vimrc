@@ -487,6 +487,7 @@
     let g:ale_open_list = 1
     nmap <silent> <C-k> <Plug>(ale_previous_wrap)
     nmap <silent> <C-j> <Plug>(ale_next_wrap)
+    highlight ALEError cterm=underline ctermbg=none
   " }}}
   " syntastic {{{
     set statusline+=%#warningmsg#
