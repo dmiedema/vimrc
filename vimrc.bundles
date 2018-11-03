@@ -80,6 +80,7 @@ call plug#begin('~/.vim/plugged')
 
     Plug 'tpope/vim-markdown'
     Plug 'xolox/vim-misc'
+    Plug 'andymass/vim-matchup'
 
     Plug 'nathanaelkane/vim-indent-guides'
     Plug 'eraserhd/vim-ios', { 'for' : ['objc'] }
