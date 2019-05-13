@@ -169,7 +169,6 @@
 
     " You're welcome for these
     inoremap jj <ESC>
-    inoremap kj <ESC>
 
     " toggle case of word
     inoremap <c-`> <ESC>viw~<ESC>i
