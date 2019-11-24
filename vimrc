@@ -20,6 +20,7 @@
   set number
 
   scriptencoding utf-8 " This should be default really...
+  set encoding=UTF-8
 
   set wrap " word wrap. Because Fuck your long lines
   set shiftround " Because I want to know you drug your line on too fucking long
@@ -49,6 +50,8 @@
   set whichwrap=b,s,h,l,<,>,[,]
   set foldenable
   set list
+
+  set guifont=Hack:h13
 
   " allow cursor change in tmux mode
   if exists('$TMUX')
@@ -438,6 +441,7 @@
     let g:airline_theme = 'murmur'
     let g:airline_left_sep='›'  " Slightly fancier than '>'
     let g:airline_right_sep='‹' " Slightly fancier than '<'
+    let g:airline_powerline_fonts = 1
 
     let g:airline#extensions#tmuxline#enabled = 0 " disable tmuxline so it doesn't overwrite settings
   " }}}
@@ -487,6 +491,9 @@
     nmap <silent> <C-k> <Plug>(ale_previous_wrap)
     nmap <silent> <C-j> <Plug>(ale_next_wrap)
     highlight ALEError cterm=underline ctermbg=none
+    let g:ale_linters = {
+      \ 'javascript': ['eslint'],
+      \ }
   " }}}
   " syntastic {{{
     set statusline+=%#warningmsg#
