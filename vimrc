@@ -126,6 +126,8 @@
 
   " Treat `.ipa`s as `.zip` files
   autocmd BufReadCmd *.ipa call zip#Browse(expand("<amatch>"))
+  " Treat `.epub`s as `.zip` files as well
+  autocmd BufReadCmd *.epub call zip#Browse(expand("<amatch>"))
 
   " Save files on focus lost events, like switching spits
   autocmd BufLeave,FocusLost * silent! wall
