@@ -16,6 +16,7 @@
   filetype plugin indent on " Detect filetypes automagically
   set ttyfast
   syntax on " This shouldn't even be a damn option really
+  set re=0 " new syntax something i guess
 
   set number
 
@@ -50,6 +51,7 @@
   set whichwrap=b,s,h,l,<,>,[,]
   set foldenable
   set list
+
 
   set guifont=Hack:h13
 
